@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 2.5rem;
+    background-color: #eee;
+}
+
+h1{
+    font-family: 'Bricyte';
+    text-align: center;
+}
+
+p{
+    font-family: 'signora';
+}
+
+#book {
+    width: 80%;
+    margin: 20px auto;
+    
+}
+
+.page {
+    width: 100%;
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+button {
+    border-radius: 1rem;
+    margin: 10px;
+    font-size: 2.3rem;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.general img {
+    float: left;
+    padding: 1rem;
+    margin: 2rem;
+    width: 30rem;
+    border-radius: 2rem;
+    transition: transform .3s ease;
+}
+
+
+.general img:hover{
+    transform: scale(1.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.buttonContainer{
+    display: inline;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+@font-face {
+    font-family: "Bricyte";
+    src: url('../fonts/Bricyte\ Howela.otf');
+}
+@font-face {
+    font-family: "signora";
+    src: url('../fonts/Pale\ Stylish.otf');
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 1.3rem;
+    }
+    .general  {
+        display: flex;
+        justify-content: cener;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .general img{
+        width: 12rem;
+        margin: 0px;
+    }
+}
+
+.flechas{
+    width: 10rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
